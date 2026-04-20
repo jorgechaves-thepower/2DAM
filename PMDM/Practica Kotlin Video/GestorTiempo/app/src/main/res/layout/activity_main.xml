@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda del día"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/campoActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce una actividad"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/botonAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir tarea"/>
+
+    <Button android:id="@+id/botonBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar todas las tareas"/>
+
+    <TextView
+        android:id="@+id/contadorTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tareas: 0"/>
+
+    <ListView
+        android:id="@+id/listaTareas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
